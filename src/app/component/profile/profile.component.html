@@ -1,0 +1,23 @@
+<div class=" d-flex justify-content-center p-5  mt-5" style="margin: auto;">
+<div class="container p-5" *ngIf="currentUser; else loggedOut" style="border: 1px solid black; max-width:600px; ">
+    <header class="jumbotron">
+      <h3>
+        <strong>Profile</strong> 
+      </h3>
+    </header>
+    <p>
+      <strong>Token:</strong>
+      {{token_val}}
+    </p>
+    <p>
+      <strong>Email:</strong>
+      {{ currentUser.email }}
+    </p>
+    <strong>Username:</strong>
+      {{currentUser.username}}
+  </div>
+  
+  <ng-template #loggedOut>
+    Please login.
+  </ng-template>
+</div>

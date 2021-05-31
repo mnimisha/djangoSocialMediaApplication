@@ -28,9 +28,13 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
+             
             ],
-            "scripts": []
+            "scripts": [
+              
+            ]
           },
           "configurations": {
             "production": {
@@ -124,5 +128,8 @@
       }
     }
   },
-  "defaultProject": "authui"
+  "defaultProject": "authui",
+  "cli": {
+    "analytics": "706b2f08-4c07-4445-b000-3cd49ecd2b29"
+  }
 }
